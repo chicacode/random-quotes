@@ -12,6 +12,7 @@ author = document.getElementById("author");
     fetch(url)
         .then(response => response.json())
         .then(function (data) {
+            // sets up a function that will be called when the specified event is delivered to target
             button.addEventListener("click", function () {
                 var quotes = data;
                 // create a random number every time the user clicks the button
