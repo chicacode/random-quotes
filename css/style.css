@@ -2,7 +2,37 @@ body{
     font-family: 'Parisienne', cursive;
     margin: 0;
     padding: 0;
-    background: #bc4e9c;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #f80759, #bc4e9c);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #f80759, #bc4e9c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-image: url("../image.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.main{
+    margin: 0 auto;
+    text-align: center;
+}
+
+.container--quote{
+    width: 40%;
+    margin: 0 auto;
+    background-color: #434343;
+    padding: 30px;
+    margin-top: 20px;
+    font-size: 35px;
+}
+.container--quote__description{
+    background: #ffffff;  /* fallback for old browsers */
+    padding: 20px;
+}
+
+.main__title--container--button .button{
+    height: 50px;
+    background-color: #000000;
+    color: #f2f2f2;
+    border: none;
+    border-radius: 20px;
+    font-size: 18px;
+    width: 200px;
+    outline: none;
+    box-sizing: border-box;
 }
