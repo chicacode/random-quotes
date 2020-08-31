@@ -8,14 +8,17 @@ author = document.getElementById("author");
 
 //IIFE
 (function () {
+    // Fetch API quotes
     fetch(url)
         .then(response => response.json())
         .then(function (data) {
             button.addEventListener("click", function () {
                 var quotes = data;
+                // create a random number every time the user clicks the button
+                // calling Math.Floor() with Math.random passes as a parameter
                 let random = Math.floor(Math.random() * quotes.length);
-                console.log(random);
 
+                // We use a random number to retrieve a quote from the array and place it into HTML
                 quote.textContent = quotes[random].text;
                 author.textContent = quotes[random].author;
             })
