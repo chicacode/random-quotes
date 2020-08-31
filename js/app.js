@@ -1,0 +1,1 @@
+console.log("En el Random Quotes");
