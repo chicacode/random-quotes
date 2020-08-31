@@ -1,4 +1,4 @@
-console.log("En el Random Quotes");
+console.log("Random Quotes");
 
 let button, quote, author;
 const url = "https://type.fit/api/quotes";
