@@ -59,15 +59,15 @@ p{
     opacity: 0.8;
     width: 202px;
 }
-
- @media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1200px) {
         body{
             font-family: 'Helvetica', serif;
             margin: 0;
             padding: 0;
-            background: #232526;  /* fallback for old browsers */
-            background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
-            background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            background: #03001e;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #fdeff9, #ec38bc, #7303c0, #03001e);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #fdeff9, #ec38bc, #7303c0, #03001e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
         }
         .main {
             background-color: transparent;
@@ -78,9 +78,47 @@ p{
         .main__title{
             color: #cecece;
         }
+        .main__title--container--button .button{
+            background-color: #fdeff9;
+            color: black;
+        }
         .container--quote{
             width: 90%;
-            background-color: #434343;
+            background-color: #03001e;
+            padding: 30px;
+            margin-top: 40px;
+            font-size: 20px;
+            box-sizing: border-box;
+            box-shadow: 0 2px 8px rgba(0,0,0,.33);
+        }
+    }
+
+ @media only screen and (max-width: 600px) {
+        body{
+            font-family: 'Helvetica', serif;
+            margin: 0;
+            padding: 0;
+            background: #03001e;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #fdeff9, #ec38bc, #7303c0, #03001e);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #fdeff9, #ec38bc, #7303c0, #03001e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+        }
+        .main {
+            background-color: transparent;
+            border: none;
+            padding: 0;
+            width: 100%;
+        }
+        .main__title{
+            color: #cecece;
+        }
+        .main__title--container--button .button{
+            background-color: #fdeff9;
+            color: black;
+        }
+        .container--quote{
+            width: 90%;
+            background-color: #03001e;
             padding: 30px;
             margin-top: 40px;
             font-size: 20px;
